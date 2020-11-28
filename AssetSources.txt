@@ -1,0 +1,31 @@
+The following are the sources for Assets used in this project. Many of the original assets were modified for use in this project. 
+
+( http://opengameart.org/content/cat-fighter-sprite-sheet )
+Sprites/cat_fighter_sprite2.png
+Sprites/sprite_base_addon_2012_12_14_2.png
+
+( http://opengameart.org/content/cat-fighter-addon1-energy-force-master-kit )
+Sprites/cat2_base.png
+Sprites/energy_effect_base.png
+
+( http://opengameart.org/content/hd-multi-layer-parallex-background-samples-of-glitch-game-assets )
+Sprites/cavebackground.png
+
+( Chris Jahosky \\studentvfiler\SGP\Art\SGP Art Archive\Tiles\Parallax\0811-Japan.png )
+Sprites/mountains.png
+
+( http://opengameart.org/content/tiling-background-pack-horizon )
+Sprites/trees.png
+Sprites/whiteclouds.png
+
+( Created by Derek Bliss © 2014 CC0 )
+Audio/Jump.wav
+
+( Created by Derek Bliss © 2015 CC0 )
+Audio/Dash.wav
+Audio/Hit0.wav
+Audio/Hit1.wav
+Audio/Hit2.wav
+Audio/Land.wav
+Audio/Shoot.wav
+Audio/Spin.wav
