@@ -9069,7 +9069,8 @@ MonoBehaviour:
   smallProjectile: {fileID: 147596, guid: 7dfe39ea38778a14b93e4185769e5341, type: 3}
   chargeProjectile: {fileID: 1529236242166239769, guid: 24ba352ed1c63154e9888b519d549219,
     type: 3}
-  superProjectile: {fileID: 0}
+  superProjectile: {fileID: 7141340436143928030, guid: bb932c406c3374e4b84286bc03d2abc7,
+    type: 3}
   chargeColors:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.49803922, b: 0, a: 1}

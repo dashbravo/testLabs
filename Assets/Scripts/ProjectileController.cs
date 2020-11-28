@@ -2,6 +2,7 @@
 
 public class ProjectileController : MonoBehaviour
 {
+    protected bool startLife = false;  //changed to protected for lab 3
 
     public bool PlayerOwned = true;
     public bool PassThroughEnemies = false;
@@ -10,7 +11,7 @@ public class ProjectileController : MonoBehaviour
     public float LifeTime = 1.2f;
     public Vector2 StartVelocity = new Vector2(20, 0);
 
-    bool startLife = false;
+    
     Animator anim;
     Rigidbody2D body = null;
 
