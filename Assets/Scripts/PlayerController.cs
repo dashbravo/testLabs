@@ -222,6 +222,7 @@ public class PlayerController : MonoBehaviour
                 audioSource.PlayOneShot(chargeClip);
                 anim.SetBool("SuperShoot", true);
                 //TODO: super effect
+                EventManager.Pause(); //this will start the event1
             }
             else
                 anim.SetBool("Shoot", true);

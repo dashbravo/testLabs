@@ -67,10 +67,23 @@ public class Mon2Controller : MonoBehaviour, IEnemyBehavior {
         anim.Play("Base Layer.idle");
         anim.SetBool("Dying", false);
         DamageTakenSinceTracking = 0;
+        //lab3
+        EventManager.handleEvent1 += Pause;
+        EventManager.handleEvent2 += UnPause;
+    }
+    void OnDisable()
+    {
+        EventManager.handleEvent1 -= Pause;
+        EventManager.handleEvent2 -= UnPause;
     }
 
     void FixedUpdate()
     {
+        //added for lab3 for animator null check
+        if (gameObject.GetComponent<Animator>().enabled == false)
+        {
+            return;
+        }
         velocity = body.velocity;
         if (flyTimer > 0)
         {
@@ -273,6 +286,16 @@ public class Mon2Controller : MonoBehaviour, IEnemyBehavior {
     public bool CanHarmPlayer()
     {
         return anim.GetBool("HarmPlayer");
+    }
+
+    void Pause()
+    {
+        gameObject.GetComponent<Animator>().enabled = false;
+    }
+
+    void UnPause()
+    {
+        gameObject.GetComponent<Animator>().enabled = true;
     }
 
 }

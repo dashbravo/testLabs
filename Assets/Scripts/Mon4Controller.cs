@@ -51,10 +51,26 @@ public class Mon4Controller : MonoBehaviour, IEnemyBehavior
         health = StartingHealth;
         anim.Play("Base Layer.idle");
         anim.SetBool("Dying", false);
+        //added for lab3 to subscribe to event
+        EventManager.handleEvent1 += Pause;
+        EventManager.handleEvent2 += UnPause;
+    }
+
+    //add for lab 3 to unsubscribe to event
+    void OnDisable()
+    {
+        EventManager.handleEvent1 -= Pause;
+        EventManager.handleEvent2 -= UnPause;
     }
 
     void FixedUpdate()
     {
+        //added for lab3 for animator null check
+        if(gameObject.GetComponent<Animator>().enabled == false)
+        {
+            return;
+        }
+
         if (attackTimer > 0)
             attackTimer -= Time.deltaTime;
         distanceFromCamera = Vector2.Distance(transform.position, Camera.position);
@@ -102,6 +118,7 @@ public class Mon4Controller : MonoBehaviour, IEnemyBehavior
         newScale.x = (facingRight) ? -1 : 1;
         transform.localScale = newScale;
     }
+    
 
     public void DealDamageToEnemy(int _damage, Vector3 _damageSourceLocation, Vector2 _force)
     {
@@ -158,6 +175,8 @@ public class Mon4Controller : MonoBehaviour, IEnemyBehavior
 
     #endregion
 
+
+
     public void Flip()
     {
         facingRight = !facingRight;
@@ -193,6 +212,16 @@ public class Mon4Controller : MonoBehaviour, IEnemyBehavior
             shot.GetComponent<ProjectileController>().Flip();
         shot.GetComponent<ProjectileController>().Init();
         shot.GetComponent<ProjectileController>().InitAnimation();
+    }
+
+    void Pause()
+    {
+        gameObject.GetComponent<Animator>().enabled = false;
+    }
+
+    void UnPause()
+    {
+        gameObject.GetComponent<Animator>().enabled = true; 
     }
 
 }
