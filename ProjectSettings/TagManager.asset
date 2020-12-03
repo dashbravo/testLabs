@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Projectile
+  - Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Enemies
+  - Ground
+  - CheckGroundColliders
+  - Spawners
+  - EnemyIgnoreProjectile
+  - PlayerProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Cave
+    uniqueID: 2189915131
+    locked: 0
+  - name: Mountains
+    uniqueID: 4248371227
+    locked: 0
+  - name: Far Background 4
+    uniqueID: 3542448839
+    locked: 0
+  - name: Far Background 3
+    uniqueID: 1089563537
+    locked: 0
+  - name: Far Background 2
+    uniqueID: 3782656105
+    locked: 0
+  - name: Far Background 1
+    uniqueID: 609302063
+    locked: 0
+  - name: Background 2
+    uniqueID: 1264759387
+    locked: 0
+  - name: Background 1
+    uniqueID: 758944945
+    locked: 0
+  - name: Collision
+    uniqueID: 3254601309
+    locked: 0
+  - name: Characters
+    uniqueID: 458273021
+    locked: 0
+  - name: Effects
+    uniqueID: 2568380683
+    locked: 0
+  - name: Foreground 2
+    uniqueID: 1559327623
+    locked: 0
+  - name: Foreground 1
+    uniqueID: 2441902035
+    locked: 0
+  - name: HUD & UI
+    uniqueID: 2190707603
+    locked: 0
